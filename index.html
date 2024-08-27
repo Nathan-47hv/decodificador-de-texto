@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <script src="app.js"></script>
+    <link rel="Stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="./assets/letra-n-dark-blue.png" class="n-img" alt="imagem de um N">
+    </header>
+    <main>
+        <table border ="0" width = "100%" cellpadding = "10">
+            <td id="esquerda">
+                <textarea placeholder="Digite seu texto" id="campo"></textarea>
+            </td>
+            <td id="direita">
+                <div id="textoFundo"></div>
+                <div class="input-container">
+                    <img id="img-grand" src="./assets/lupinha.png" class="input-img" alt="Pessoa com uma lupa procurando mensagem">
+                    <h1 id="titulo">Nenhuma mensagem encontrada</h1>
+                    <p id="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <textarea class="apresentacao__texto__secundario" id="textoResultado" placeholder="Nenhuma mensagem"></textarea>
+                </div>
+                <div class="footer__button">
+                    <button onclick="copiarTexto()" id="copy-clean" class="container__botao3">Copiar</button>
+                </div>
+            </td>
+        </table>
+    </main>
+    <footer class="rodape">
+        <div class="conteudo__fim">
+            <div class="alert-alert-primary" role="alert">
+            Apenas letras minúsculas e sem acento
+            </div>
+            <div class="container__botoes">
+                <button onclick="criptTexto()" class="container__botao">Criptografar</button>
+                <button onclick="descriptTexto()" class="container__botao2">Descriptografar</button>
+            </div>
+        </div>
+        <p class="p-foot">Desenvolvido por Nathan Henrique</p>
+    </footer>
+</body>
+</html>
